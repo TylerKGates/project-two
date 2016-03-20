@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Project Two!</title>
+  <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <h1>Tyler's League of Legends Wiki!</h1>
+    <img class='logo'src="http://www.macupdate.com/images/icons256/47210.png"/>
+    <br><br>
+  <div id="contentContainer">
+    <label>
+      <select name="select" id="champDropDown">
+        <option>Champions</option>
+      </select>
+      <select name="select" id="champDropDown">
+        <option>Players</option>
+      </select>
+    </label>
+    <button type="button" class="submitButton">Search!</button>
+    <br><br>
+    <div id="champInfo">
+    </div>
+    <div class="HBS-container">
+      <script id="HBS-template" type="text/x-handlebars-template">
+      <h3>{{name}}</h3><p>{{type}}</p>
+      <!-- FOUND ON ERROR CODE ON STACKOVERFLOW -->
+      <span class='imgFail'><img src="{{image}}" onError="this.onerror=null;this.src='https://scontent-iad3-1.xx.fbcdn.net/hphotos-xaf1/v/t34.0-12/12421410_10153448375931439_949191431_n.jpg?oh=5138d66c8b0583ea6394f39278ec9fd9&oe=56EEBD41';"/></span>
+      <h3>Blurb:</h3><p>{{blurb}}</p>
+      <h3>Abilities:</h3><p>{{spells}}</p>
+      </script>
+    </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+    <script src="apiKey.js"></script>
+    <script src="players.js"></script>
+  </body>
+</html>

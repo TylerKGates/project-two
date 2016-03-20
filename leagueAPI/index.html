@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Project Two!</title>
+  <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <h1>League Champions!</h1>
+    <img class='logo'src="http://www.macupdate.com/images/icons256/47210.png"/>
+    <br><br>
+  <div id="contentContainer">
+    <label>
+      <select name="select" id="champDropDown">
+        <option>Champions</option>
+      </select>
+    </label>
+    <button type="button" class="submitButton">Search!</button>
+    <br><br>
+    <div id="champInfo">
+    </div>
+    <div class="HBS-container">
+      <script id="HBS-template" type="text/x-handlebars-template">
+      <h3>{{name}}</h3><p>{{type}}</p>
+      <!-- FOUND ON ERROR CODE ON STACKOVERFLOW -->
+      <span class='imgFail'><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/{{image}}" onError="this.onerror=null;this.src='http://i.imgur.com/GO8KNDy.jpg';"/></span>
+      <br><br>
+      <span class=something>Click to reveal lore</span> <span class='blurb'><p class="lore">{{{lore}}}</p></span>
+      <h3>Abilities:</h3>
+      <p>{{spell1}}</p>
+      <p>{{spell2}}</p>
+      <p>{{spell3}}</p>
+      <p>{{spell4}}</p>
+      </script>
+    </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+    <script src="apiKey.js"></script>
+    <script src="handlebars.js"></script>
+    <script src="actualMain.js"></script>
+  </body>
+</html>

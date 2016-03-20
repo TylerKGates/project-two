@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title>lab3</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+ </head>
+ <body>
+     <select id="dropDown">
+       <option value="newswire">Newswire</option>
+       <option value="books">Books</option>
+       <option value="movies">Movies</option>
+     </select>
+     <button type="button" id="submitButton">Submit!</button>
+     <br>
+     <input type="input" id ="bookInput" value="Book Title">
+     <button type="button" id="bookButton">Submit Book Title</button>
+​
+     <div id="container">
+
+     </div>
+
+     <script id="handlebarTemplate" type="text/x-handlebars-template">
+       <!-- newswire  -->
+       <p>{{title}}</p>
+       <p>{{abstract}}</p>
+       <p>{{byline}}</p>
+       <p>{{section}}</p>
+       <p>{{subsection}}</p>
+       <p><img src="{{multimedia.0.url}}"></img>
+       </p>
+       <p>{{multimedia.0.caption}}</p>
+       <!-- books -->
+       <p>{{book_title}}</p>
+       <p>{{book_author}}</p>
+       <p>{{summary}}</p>
+       <p>{{publication_dt}}</p>
+       <p>
+         <a href="{{url}}"> </a>
+       </p>
+
+       {{#each isbn13}}
+       <p>{{this}}</p>
+       {{/each}}
+
+       <!-- movies -->
+       <p>{{display_title}}</p>
+       <p>{{headline}}</p>
+       <p>{{summary_short}}</p>
+       <p>{{opening_date}}</p>
+       <p>{{dvd_release_date}}</p>
+       <p>{{url}}</p>
+       <p>{{thumbnail}}</p>
+
+
+     </script>
+   <script src="lab3.js" charset="utf-8"></script>
+ </body>
+ </html>

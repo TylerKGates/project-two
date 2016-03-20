@@ -1,0 +1,9 @@
+SPELLS:
+console.log(response.spells[0].name);
+console.log(response.spells[0].image.full);
+console.log(response.spells[1].name);
+console.log(response.spells[1].image.full);
+console.log(response.spells[2].name);
+console.log(response.spells[2].image.full);
+console.log(response.spells[3].name);
+console.log(response.spells[3].image.full);
