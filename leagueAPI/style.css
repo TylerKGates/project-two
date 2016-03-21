@@ -4,9 +4,8 @@ body {
 }
 
 #contentContainer {
-  display: inline;
-  max-width: 50px;
-  max-height: 50px;
+margin: auto;
+display: inline;
 }
 
 h1 {
@@ -27,6 +26,8 @@ h1 {
   color: blue;
 }
 
+
+
 .something {
   color: white;
 }
@@ -36,6 +37,15 @@ img {
   width: 175px;
   border: 0;
   padding: 0;
+}
+
+.vid {
+  margin-left: 800px;
+  position: absolute;
+}
+
+iframe {
+  position: absolute;
 }
 
 .logo {
@@ -49,12 +59,19 @@ img {
   color: white;
 }
 
+.type {
+  color: cyan;
+}
 h3 {
-  color: white;
+  color: purple;
+}
+
+.something {
+  color: purple;
 }
 
 p {
-  color: white;
+  color: red;
 }
 
 label {
