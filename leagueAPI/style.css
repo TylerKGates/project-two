@@ -1,11 +1,13 @@
 body {
-  background-color: black;
   font-family: FritzQuad;
+  background-image: url('http://orig04.deviantart.net/5fde/f/2015/023/4/2/preseason_2015_art_by_su_ke-d8f1bdj.jpg');
+  background-repeat: repeat-y;
 }
 
 #contentContainer {
+width: 750px;
 margin: auto;
-display: inline;
+background-color: rgba(0,0,0,0.6);
 }
 
 h1 {
@@ -39,13 +41,11 @@ img {
   padding: 0;
 }
 
-.vid {
-  margin-left: 800px;
-  position: absolute;
-}
+
 
 iframe {
-  position: absolute;
+  margin-left: 400px;
+  display: block;
 }
 
 .logo {
